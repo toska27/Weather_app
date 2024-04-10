@@ -1,0 +1,27 @@
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 15px;
+}
+.parameters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.parameters p {
+  font-size: 20px;
+  padding-left: 20px;
+}
