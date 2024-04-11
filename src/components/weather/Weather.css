@@ -1,5 +1,33 @@
 .weather {
   width: 30%;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
+.clear {
+  background-image: url("../../images/clear\ sky.jpg");
+  background-size: cover;
+  color: aliceblue;
+}
+.mist {
+  background-image: url("../../images/mist.jpg");
+  background-size: cover;
+}
+.broken {
+  background-image: url("../../images/broken\ clouds.jpg");
+  background-size: cover;
+}
+.overcast {
+  background-image: url("../../images/overcast\ clouds.jpg");
+  background-size: cover;
+}
+.few {
+  background-image: url("../../images/few\ clouds.jpg");
+  background-size: cover;
+}
+.haze {
+  background-image: url("../../images/haze.jpg");
+  background-size: cover;
 }
