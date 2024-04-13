@@ -10,6 +10,6 @@
   justify-content: space-around;
 }
 .parameters p {
-  font-size: 20px;
-  padding-left: 20px;
+  font-size: 1.2rem;
+  padding: 0 1.5rem;
 }

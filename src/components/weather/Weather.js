@@ -17,7 +17,7 @@ const Weather = ({ onChange }) => {
       divName = "weather mist";
     } else if (
       city.weather[0].description === "broken clouds" ||
-      city.weather[0].description === "scattered sky"
+      city.weather[0].description === "scattered clouds"
     ) {
       divName = "weather broken";
     } else if (city.weather[0].description === "clear sky") {

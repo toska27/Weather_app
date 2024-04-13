@@ -1,7 +1,16 @@
 body {
   margin: 0;
   box-sizing: border-box;
-  background-color: antiquewhite;
+  background-color: rgb(47, 112, 186);
+  background: linear-gradient(
+    151deg,
+    rgba(47, 112, 186, 1) 15%,
+    rgba(135, 129, 129, 1) 63%
+  );
+  height: 100vh;
+}
+h1 {
+  font-size: 50px;
 }
 h2 {
   font-size: 40px;

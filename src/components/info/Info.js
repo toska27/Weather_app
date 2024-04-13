@@ -6,13 +6,17 @@ const Info = ({ city }) => {
     ? `${city.name}, ${city.sys.country}`
     : "";
   const temp = city.hasOwnProperty("main")
-    ? `${city.main.temp}°C | ${city.weather[0].description}`
+    ? `${Math.round(city.main.temp)}°C | ${city.weather[0].description}`
     : "";
   const wind = city.hasOwnProperty("main") ? city.wind.speed : "";
   const pressure = city.hasOwnProperty("main") ? city.main.pressure : "";
   const humidity = city.hasOwnProperty("main") ? city.main.humidity : "";
-  const temp_max = city.hasOwnProperty("main") ? city.main.temp_max : "";
-  const temp_min = city.hasOwnProperty("main") ? city.main.temp_min : "";
+  const temp_max = city.hasOwnProperty("main")
+    ? Math.round(city.main.temp_max)
+    : "";
+  const temp_min = city.hasOwnProperty("main")
+    ? Math.round(city.main.temp_min)
+    : "";
 
   return (
     <div className="info">
@@ -23,7 +27,7 @@ const Info = ({ city }) => {
 
       <div className={city.hasOwnProperty("name") ? "show" : "hide"}>
         <h2>{name}</h2>
-        <h4>{temp}</h4>
+        <h3>{temp}</h3>
         <div className="parameters">
           <p>pressure:{pressure}</p>
           <p>wind speed: {wind}</p>

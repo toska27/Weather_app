@@ -3,7 +3,11 @@
   text-align: center;
   padding: 10px;
   background-color: aliceblue;
-  border: 1px solid black;
+  border-top-left-radius: 37px 140px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+  box-shadow: rgb(238, 243, 248) 0px 20px 30px -10px;
 }
 
 .clear {
@@ -18,6 +22,8 @@
 .broken {
   background-image: url("../../images/broken\ clouds.jpg");
   background-size: cover;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 .overcast {
   background-image: url("../../images/overcast\ clouds.jpg");
