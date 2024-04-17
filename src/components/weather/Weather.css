@@ -37,3 +37,8 @@
   background-image: url("../../images/haze.jpg");
   background-size: cover;
 }
+.rain {
+  background-image: url("../../images/rain.jpg");
+  background-size: cover;
+  color: rgb(255, 255, 255);
+}

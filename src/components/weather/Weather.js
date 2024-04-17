@@ -28,6 +28,11 @@ const Weather = ({ onChange }) => {
       divName = "weather few";
     } else if (city.weather[0].description === "haze") {
       divName = "weather haze";
+    } else if (
+      city.weather[0].description.includes("rain") ||
+      city.weather[0].description === "light intensity drizzle"
+    ) {
+      divName = "weather rain";
     }
   }
 

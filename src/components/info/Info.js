@@ -1,7 +1,15 @@
 import React from "react";
+import {
+  FaTemperatureArrowUp,
+  FaTemperatureArrowDown,
+  FaWind,
+  FaCloudRain,
+} from "react-icons/fa6";
+import { CgCompressRight } from "react-icons/cg";
 import "./Info.css";
 
 const Info = ({ city }) => {
+  console.log(city);
   const name = city.hasOwnProperty("name")
     ? `${city.name}, ${city.sys.country}`
     : "";
@@ -29,11 +37,21 @@ const Info = ({ city }) => {
         <h2>{name}</h2>
         <h3>{temp}</h3>
         <div className="parameters">
-          <p>pressure:{pressure}</p>
-          <p>wind speed: {wind}</p>
-          <p>max temp: {temp_max}°C</p>
-          <p>min temp: {temp_min}°C</p>
-          <p>humidity: {humidity}</p>
+          <p>
+            Max temp {temp_max}°C <FaTemperatureArrowUp />
+          </p>
+          <p>
+            Min temp {temp_min}°C <FaTemperatureArrowDown />
+          </p>
+          <p>
+            Wind speed {wind}m/s <FaWind />
+          </p>
+          <p>
+            Humidity {humidity}% <FaCloudRain />
+          </p>
+          <p>
+            Pressure {pressure}mb <CgCompressRight />
+          </p>
         </div>
       </div>
     </div>

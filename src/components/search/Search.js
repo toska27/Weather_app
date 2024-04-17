@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 import "./Search.css";
 
 const api = {
@@ -28,7 +29,9 @@ const Search = ({ onChange }) => {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <button onClick={searchPressed}>Search</button>
+      <button onClick={searchPressed}>
+        <FaSearch />
+      </button>
     </div>
   );
 };
