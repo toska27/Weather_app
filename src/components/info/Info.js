@@ -9,7 +9,6 @@ import { CgCompressRight } from "react-icons/cg";
 import "./Info.css";
 
 const Info = ({ city }) => {
-  console.log(city);
   const name = city.hasOwnProperty("name")
     ? `${city.name}, ${city.sys.country}`
     : "";
